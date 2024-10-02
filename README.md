@@ -16,23 +16,15 @@ The basic technologies and tools to be used in this project include:
 - **SLF4J**: For logging purposes.
 - **Git & GitHub**: Version control Systems
 
+## Usage
 
-## Installation
-
-1. Install the **Java JDK** on your computer.
+1. Install the Java Development Kit (JDK) on your computer.
 2. Set up the necessary dependencies in the project, including Selenium WebDriver and TestNG.
 3. Configure WebDriver for the desired browser (e.g., ChromeDriver, FirefoxDriver).
 4. Open the project in your IDE.
 
-## Usage
-
-To run the tests, follow these steps:
-
-1. Open the test class in your IDE.
-2. Set up the TestNG configuration.
-3. Run the tests.
-
 ## Contributing
+
 Contributions are welcome! If you find any issues, feel free to open a pull request.
 
 Please follow these steps to contribute:
