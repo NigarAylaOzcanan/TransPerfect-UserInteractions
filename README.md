@@ -20,10 +20,9 @@ The basic technologies and tools to be used in this project include:
 ## Installation
 
 1. Install the **Java JDK** on your computer.
-2. Manage dependencies using **Maven** or **Gradle**.
-3. Open the project in your IDE.
-4. Download the necessary dependencies.
-5. Use TestNG to run the tests.
+2. Set up the necessary dependencies in the project, including Selenium WebDriver and TestNG.
+3. Configure WebDriver for the desired browser (e.g., ChromeDriver, FirefoxDriver).
+4. Open the project in your IDE.
 
 ## Usage
 
