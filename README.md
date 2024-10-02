@@ -8,12 +8,14 @@ This task aims to validate the functionality of the webpage by simulating basic 
 
 The basic technologies and tools to be used in this project include:
 
-- **Java** - Programming language.
-- **Selenium** - Web browser automation.
-- **TestNG** - Testing framework.
+- **Java**: The primary programming language for the task.
+- **Selenium**: For web browser automation.
+- **TestNG**: For running tests and generating reports.
 - **Apache Commons IO**: For file operations such as saving screenshots.
 - **Apache Commons Lang3**: For generating random strings and numbers.
-- **Git & GitHub** - Version control Systems
+- **SLF4J**: For logging purposes.
+- **Git & GitHub**: Version control Systems
+
 
 ## Installation
 
