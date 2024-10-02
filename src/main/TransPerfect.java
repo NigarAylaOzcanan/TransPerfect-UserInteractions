@@ -125,7 +125,7 @@ public class TransPerfect extends BaseDriver {
         timestamp = LocalDateTime.now().format(formatter);
 
         try {
-            FileUtils.copyFile(screenshotFile, new File(desktopPath + "\\screenshot_" + timestamp + ".png"));
+            FileUtils.copyFile(screenshotFile, new File(desktopPath + "/Screenshot_" + timestamp + ".png"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
