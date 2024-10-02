@@ -85,6 +85,7 @@ public class TransPerfect extends BaseDriver {
         // Wait for the "Request a Free Quote" search result to appear
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Request a Free Quote']")));
         WebElement requestQuoteResult = driver.findElement(By.xpath("//a[text()='Request a Free Quote']"));
+        Assert.assertTrue(requestQuoteResult.isDisplayed(), "Request a Free Quote search result is not displayed!");
 
         // Click on Request a Free Quote
         requestQuoteResult.click();
