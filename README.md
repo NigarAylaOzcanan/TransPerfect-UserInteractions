@@ -2,7 +2,7 @@
 
 ## Task Overview
 
-This task aims to validate the functionality of the web page by simulating basic user interactions on the [TransPerfect](https://www.transperfect.com/) website.
+This task aims to validate the functionality of the webpage by simulating basic user interactions on the [TransPerfect](https://www.transperfect.com/) website.
 
 ## Technologies and Tools Used
 
