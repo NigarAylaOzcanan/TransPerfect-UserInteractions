@@ -23,10 +23,12 @@ public class TransPerfect extends BaseDriver {
     public void transPerfect() {
         int length = 8;
         String typedText;
-        String firstName = "Mario";
         String timestamp;
         String soluzioniURL;
         String randomPhoneNumber;
+        String firstName = "Mario";
+        String firstText="translation";
+        String secondText="quotes";
         DateTimeFormatter formatter;
         Actions action = new Actions(driver);
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -69,7 +71,7 @@ public class TransPerfect extends BaseDriver {
 
         // Enter text "translation" in the Search text... textbox
         WebElement searchBox = driver.findElement(By.xpath("//input[@id='edit-search-api-fulltext']"));
-        searchBox.sendKeys("translation");
+        searchBox.sendKeys(firstText);
 
         // Delete the text you just entered
         typedText = searchBox.getAttribute("value");
@@ -78,7 +80,7 @@ public class TransPerfect extends BaseDriver {
         }
 
         // Enter "quote" in the Search text... textbox
-        searchBox.sendKeys("quotes" + Keys.ENTER);
+        searchBox.sendKeys(secondText + Keys.ENTER);
 
         // Wait for the "Request a Free Quote" search result to appear
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Request a Free Quote']")));
