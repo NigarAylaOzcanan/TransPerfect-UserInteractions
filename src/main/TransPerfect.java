@@ -37,11 +37,18 @@ public class TransPerfect extends BaseDriver {
         driver.navigate().to(ConfigReader.getProperty("URL"));
         wait.until(ExpectedConditions.urlToBe(ConfigReader.getProperty("URL")));
 
+        // Close the popup if needed
+        action.scrollByAmount(0, 500).perform();
+        List<WebElement> cookie = driver.findElements(By.cssSelector("[class='cookiesjsr-banner--action'] button"));
+        if (cookie.size() > 0) {
+            cookie.get(1).click();
+        }
+
         // Click on Industries in the top navigation bar
         WebElement industriesButton = driver.findElement(By.linkText("Industries"));
         industriesButton.click();
 
-        // Close the popup if needed
+        // Close the popup if needed (The pop-up reappeared after step 2, so the process of closing was repeated.)
         action.scrollByAmount(0, 500).perform();
         List<WebElement> cookies = driver.findElements(By.cssSelector("[class='cookiesjsr-banner--action'] button"));
         if (cookies.size() > 0) {
