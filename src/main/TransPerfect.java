@@ -48,7 +48,7 @@ public class TransPerfect extends BaseDriver {
         WebElement industriesButton = driver.findElement(By.linkText("Industries"));
         industriesButton.click();
 
-        // Close the popup if needed (The pop-up reappeared after step 2, so the process of closing was repeated.)
+        // Close the popup if needed (The pop-up reappeared after step 3, so the process of closing was repeated.)
         action.scrollByAmount(0, 500).perform();
         List<WebElement> cookies = driver.findElements(By.cssSelector("[class='cookiesjsr-banner--action'] button"));
         if (cookies.size() > 0) {
