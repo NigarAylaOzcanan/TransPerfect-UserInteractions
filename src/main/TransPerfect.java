@@ -74,10 +74,7 @@ public class TransPerfect extends BaseDriver {
         searchBox.sendKeys(firstText);
 
         // Delete the text you just entered
-        typedText = searchBox.getAttribute("value");
-        for (int i = 0; i < typedText.length(); i++) {
-            action.sendKeys(Keys.BACK_SPACE).perform();
-        }
+        searchBox.sendKeys(Keys.CONTROL + "a" + Keys.DELETE);
 
         // Enter "quote" in the Search text... textbox
         searchBox.sendKeys(secondText + Keys.ENTER);
