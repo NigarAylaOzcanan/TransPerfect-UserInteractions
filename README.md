@@ -22,16 +22,3 @@ The basic technologies and tools to be used in this project include:
 2. Set up the necessary dependencies in the project, including Selenium WebDriver and TestNG.
 3. Configure WebDriver for the desired browser (e.g., ChromeDriver, FirefoxDriver).
 4. Open the project in your IDE.
-
-## Contributing
-
-Contributions are welcome! If you find any issues, feel free to open a pull request.
-
-Please follow these steps to contribute:
-
-- Fork the repository.
-- Create a new branch for your feature or bugfix.
-- Make your changes and commit them.
-- Push to your branch.
-- Create a pull request.
-
